@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Choatogram Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body style="background-image:url('bgimg.jpg') ;
+background-size:cover;
+background-position:unset">
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()" style="font-size: 20px; float: right; margin-top: 20px;">Logout</button>
+	<center>
+		<label class="header" style="font-family:'Dancing Script', cursive; color:gray; font-size: 50px;margin-top: 40px; ">	
+			Chatogram
+			<sup>
+				<img src="icon.png" style=" width: 80px; height: 80px;">
+			</sup>
+		</label>
+
+		<h3 class="color_white" id="welcome"></h3>
+		<div class="form-group input_div_room_page">
+			<label style="font-size: 20px;">♥ Add Room:</label>
+<input type="text" id="room_name" class="form-control" placeholder="Add Room !">
+		</div>
+		<button class="btn btn-success" onclick="AddRoom()">♥ Add Room</button>
+		<h3 class="color_white">♥ SMASH HIT ROOMS</h3>
+	<div id="output" style="padding: 10px; width:80; background-color: rgba(234, 149, 149, 0.642); border-radius: 15px;"></div>
+	</center>
+</div>
+<script src="Add_room_page.js"></script>
+</body>
+</html>
